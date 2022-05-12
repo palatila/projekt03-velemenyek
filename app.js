@@ -1,21 +1,21 @@
 const reviews = [
 
     {
-        name:"Szent Endre",
+        name: "Szent Endre",
         job: "PHP fejlesztő",
-        img:"https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis molestiae, sint fuga exercitationem possimus quasi quia qui dolorum fugit optio laborum dolor distinctio ea illo tempore. Vero nemo maiores aliquid sint. Praesentium dolorum voluptas dolore accusamus, reprehenderit dolor cumque. Facilis velit earum commodi quasi, praesentium minima voluptates consequatur possimus modi asperiores, placeat voluptas alias, pariatur facere adipisci et sit aliquid similique laboriosam. Quae, vero! Magni aperiam numquam aliquam ut ipsam perferendis vel, beatae dolore.",
     },
     {
-        name:"Nagy Zsanet",
+        name: "Nagy Zsanet",
         job: "Marketing Manager",
-        img:"https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis molestiae, sint fuga exercitationem possimus quasi quia qui dolorum fugit optio laborum dolor distinctio ea illo tempore. Vero nemo maiores aliquid sint. Praesentium dolorum voluptas dolore accusamus, reprehenderit dolor cumque. Facilis velit earum commodi quasi, praesentium minima voluptates consequatur possimus modi asperiores, placeat voluptas alias, pariatur facere adipisci et sit aliquid similique laboriosam. ",
     },
     {
-        name:"Törk Bálint",
+        name: "Törk Bálint",
         job: "Marketing Manager",
-        img:"https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+        img: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nobis molestiae, sint fuga exercitationem possimus quasi quia qui dolorum fugit optio laborum dolor distinctio ea illo tempore. Vero nemo maiores aliquid sint. Praesentium dolorum voluptas dolore accusamus, reprehenderit dolor cumque. Facilis velit earum commodi quasi, praesentium minima voluptates consequatur possimus modi asperiores, placeat voluptas alias, pariatur facere adipisci et sit aliquid similique laboriosam. ",
     }
 
@@ -32,7 +32,7 @@ const nextBtn = document.querySelector(".next-btn");
 
 let current = 0;
 
-window.addEventListener("load", ()=>{
+window.addEventListener("load", ()=> {
 
     const item = reviews[current];
     img.src = item.img;
@@ -50,7 +50,7 @@ function showPerson(person){
 
 }
 
-nextBtn.addEventListener("click", ()=>{
+nextBtn.addEventListener("click", ()=> {
 
     current++;
 
@@ -61,7 +61,7 @@ nextBtn.addEventListener("click", ()=>{
     showPerson(current);
 })
 
-nextBtn.addEventListener("click", ()=>{
+prevBtn.addEventListener("click", ()=> {
 
     current--;
 
